@@ -23,10 +23,6 @@
                     centerModel : true,
                     color = 0xFFFFFF
                     features : ['grid', 'menu', 'summary', 'orientationBox', ],
-                    var light = new THREE.DirectionalLight(0x2a2a2a, 2.5),
-                    light.position.set(25, 50, -25),
-                    scene.add(light),
-                    scene.add(new THREE.AmbientLight(0x2a2a2a, 0.25)),
                     camera:
                     {
                         far: 5000,
@@ -37,6 +33,10 @@
                         position : [5000, 5000, 5000],
                         fov : 45,
                     },
+                        var light = new THREE.DirectionalLight(0x2a2a2a, 2.5),
+                        light.position.set(25, 50, -25),
+                        scene.add(light),
+                        scene.add(new THREE.AmbientLight(0x2a2a2a, 0.25)),
                     url: 'scene.usdz'
                 });
         </script>

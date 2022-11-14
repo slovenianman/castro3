@@ -2,7 +2,7 @@
 <html>
     <head><title>Aspose.3D</title></head>
     <style>
-        #canvas {border:1px solid grey;width: 900px;height:700px;}
+        #canvas {border:1px solid black;width: 900px;height:700px;}
     </style>
     <body>
         <canvas id='canvas'></canvas>
@@ -20,7 +20,7 @@
                 aspose3d({
                     canvas : 'canvas',
                     movement : 'orbital',
-                    centerModel : true,
+                    centerModel : false,
                     features : ['grid', 'menu', 'summary', 'orientationBox', ],
                     camera:
                     {
@@ -29,7 +29,7 @@
                         up: 'y',
                         lookAt : [0, 0, 0],
                         position : [5, 5, 5],
-                        fov : 1
+                        fov : 25
                     },
                     url: 'scene.usdz'
                 });

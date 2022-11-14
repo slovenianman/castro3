@@ -21,22 +21,17 @@
                     canvas : 'canvas',
                     movement : 'orbital',
                     centerModel : true,
-                    color = 0xFFFFFF
                     features : ['grid', 'menu', 'summary', 'orientationBox', ],
                     camera:
                     {
                         far: 5000,
                         near: 1,
-                        aspect: 10,
+                        aspect: 7,
                         up: 'y',
                         lookAt : [0, 0, 0],
                         position : [5000, 5000, 5000],
                         fov : 45,
                     },
-                        var light = new THREE.DirectionalLight(0x2a2a2a, 2.5),
-                        light.position.set(25, 50, -25),
-                        scene.add(light),
-                        scene.add(new THREE.AmbientLight(0x2a2a2a, 0.25)),
                     url: 'scene.usdz'
                 });
         </script>

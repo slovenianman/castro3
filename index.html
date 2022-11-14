@@ -2,7 +2,7 @@
 <html>
     <head><title>Aspose.3D</title></head>
     <style>
-        #canvas {border:1px solid black;width: 900px;height:700px;}
+        #canvas {border:1px solid white;width: 900px;height:700px;}
     </style>
     <body>
         <canvas id='canvas'></canvas>
@@ -24,13 +24,13 @@
                     features : ['grid', 'menu', 'summary', 'orientationBox', ],
                     camera:
                     {
-                        far: 100,
+                        far: 2000,
                         near: 5,
                         aspect: 2,
                         up: 'y',
                         lookAt : [0, 0, 0],
-                        position : [0, 10, 20],
-                        fov : 45
+                        position : [2000, 2000, 2000],
+                        fov : 270
                     },
                     url: 'scene.usdz'
                 });

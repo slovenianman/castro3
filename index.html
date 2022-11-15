@@ -21,7 +21,7 @@
                     canvas : 'canvas',
                     movement : 'orbital',
                     centerModel : true,
-                    features : ['grid', 'menu', 'summary', 'orientationBox', ],
+                    features : ['grid', 'menu', 'summary', 'orientationBox', 'light', ],
                     camera:
                     {
                         far: 5000,
@@ -33,10 +33,6 @@
                         fov : 70
                     },
                     url: 'scene.usdz',
-                    RectAreaLightUniformsLib.init(); 
-                        const rectLight1 = new THREE.RectAreaLight( 0xff0000, 5, 4, 10 ),
-                        rectLight1.position.set( - 5, 5, 5 ),
-                        scene.add( rectLight1 ),
                 });
         </script>
 </html>

@@ -21,7 +21,7 @@
                     canvas : 'canvas',
                     movement : 'orbital',
                     centerModel : true,
-                    features : ['grid', 'menu', 'summary', 'orientationBox', 'light', ],
+                    features : ['grid', 'menu', 'summary', 'orientationBox', ],
                     camera:
                     {
                         far: 5000,
@@ -32,6 +32,10 @@
                         position : [5000, 5000, 5000],
                         fov : 70
                     },
+                    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6),
+                    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6),
+                    directionalLight.position.set(10, 20, 0),
+                    scene.add(ambientLight, directionalLight),
                     url: 'scene.usdz',
                 });
         </script>

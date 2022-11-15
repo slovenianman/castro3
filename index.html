@@ -33,12 +33,12 @@
                         fov : 70
                     },
                     addLight(...pos) {
-                        color = 0xFFFFFF;
-                        intensity = 1;
-                        light = new THREE.DirectionalLight(color, intensity);
-                        light.position.set(...pos);
-                        scene.add(light);
-                        scene.add(light.target);
+                        color = 0xFFFFFF,
+                        intensity = 1,
+                        light = new THREE.DirectionalLight(color, intensity),
+                        light.position.set(...pos),
+                        scene.add(light),
+                        scene.add(light.target),
                     },
                     url: 'scene.usdz',
                 });
